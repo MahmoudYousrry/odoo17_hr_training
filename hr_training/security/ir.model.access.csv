@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_training_course,access.hr.training.course,model_hr_training_course,hr.group_hr_user,1,1,1,1
+access_hr_training_participation,access.hr.training.participation,model_hr_training_participation,hr.group_hr_user,1,1,1,1
+access_hr_employee_instructor_field,access.hr.employee.instructor,hr.model_hr_employee,hr.group_hr_user,1,1,1,0
+access_hr_department_training_courses_field,access.hr.department.training.courses,model_hr_department,hr.group_hr_user,1,1,1,0

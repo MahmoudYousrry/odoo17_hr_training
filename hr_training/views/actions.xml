@@ -1,0 +1,17 @@
+<odoo>
+
+
+    <record id="action_hr_training_courses" model="ir.actions.act_window">
+        <field name="name">Training Courses</field>
+        <field name="res_model">hr.training.course</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_hr_training_participations" model="ir.actions.act_window">
+        <field name="name">Training Participations</field>
+        <field name="res_model">hr.training.participation</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+</odoo>

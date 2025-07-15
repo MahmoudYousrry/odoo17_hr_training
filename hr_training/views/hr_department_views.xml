@@ -1,0 +1,18 @@
+<odoo>
+    <record id="view_department_form_training_inherit" model="ir.ui.view">
+        <field name="name">hr.department.form.training.inherit</field>
+        <field name="model">hr.department</field>
+        <field name="inherit_id" ref="hr.view_department_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='oe_button_box']" position="inside">
+                <field name="training_participation_count" invisible="1"/>
+                <button type="object" name="action_open_training_courses"
+                        class="oe_stat_button"
+                        icon="fa-graduation-cap"
+                        invisible="training_participation_count == 0">
+                    <field name="training_courses_count" widget="statinfo" string="Trainings"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>
